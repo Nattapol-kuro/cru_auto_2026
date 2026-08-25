@@ -83,7 +83,7 @@ void b_cross(int speed) {
     int C = analogRead(68);
     int L = analogRead(67);
 
-    if (L > 950 && C > 950 && R > 950) {
+    if (L > 900 && C > 900 && R > 900) {
       break;
     }
 

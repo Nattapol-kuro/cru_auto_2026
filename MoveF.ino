@@ -93,7 +93,7 @@ void cheks_eye(int Basespeed, float Kp, float Kd, int range) {
 
 void scross(int Basespeed, float Kp, float Kd, int t) {
   readLineF(220, 50);
-  while (analogRead(66) > 400 && analogRead(63) > 400) {
+  while (analogRead(66) > 500 && analogRead(63) > 350) {
     readLineF(220, 50);
     stdPID(Basespeed, Kp, Kd);
   }
@@ -102,7 +102,7 @@ void scross(int Basespeed, float Kp, float Kd, int t) {
 
 void scross_navy(int Basespeed, float Kp, float Kd, int t) {
   readLineF(220, 50);
-  while (analogRead(63) > 400 && analogRead(66) > 400) {
+  while (analogRead(63) > 500 && analogRead(66) > 350) {
     readLineF(220, 50);
     stdPID(Basespeed, Kp, Kd);
   }
@@ -120,7 +120,7 @@ void scheks_l(int Basespeed, float Kp, float Kd, int t) {
 
 void scheks_ll(int Basespeed, float Kp, float Kd, int t) {
   readLineF(220, 50);
-  while (analogRead(66) > 400) {
+  while (analogRead(66) > 500) {
     readLineF(220, 50);
     stdPIDD(Basespeed, Kp, Kd);
   }
@@ -129,7 +129,7 @@ void scheks_ll(int Basespeed, float Kp, float Kd, int t) {
 
 void scheks_r(int Basespeed, float Kp, float Kd, int t) {
   readLineF(220, 50);
-  while (analogRead(63) > 400) {
+  while (analogRead(63) > 350) {
     readLineF(220, 50);
     stdPID(Basespeed, Kp, Kd);
   }
@@ -138,7 +138,7 @@ void scheks_r(int Basespeed, float Kp, float Kd, int t) {
 
 void scheks_rr(int Basespeed, float Kp, float Kd, int t) {
   readLineF(220, 50);
-  while (analogRead(63) > 400) {
+  while (analogRead(63) > 350) {
     readLineF(220, 50);
     stdPIDD(Basespeed, Kp, Kd);
   }

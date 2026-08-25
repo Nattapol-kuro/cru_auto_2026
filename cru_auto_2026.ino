@@ -16,11 +16,19 @@ int error, last_error;
 int PIDValue;
 
 int front_pin[7] = { 55, 56, 57, 58, 59, 60, 61 };
-int MAX_SENSOR_F[7] = { 995, 993, 995, 994, 996, 993, 995 };
-int MIN_SENSOR_F[7] = { 291, 389, 424, 254, 234, 160, 344 };
-// int MAX_SENSOR_F[7] = { 997, 993, 994, 995, 998, 988, 998 };
-// int MIN_SENSOR_F[7] = { 411, 572, 529, 299, 343, 437, 486 };
+// int MAX_SENSOR_F[7] = { 989, 993, 987, 992, 995, 993, 996 };
+// int MIN_SENSOR_F[7] = { 358, 475, 411, 242, 331, 363, 386 };
+// int MAX_SENSOR_F[7] = { 986, 995, 994, 993, 995, 993, 996 };
+// int MIN_SENSOR_F[7] = { 400, 613, 594, 329, 454, 376, 423 };
 
+
+
+// int MAX_SENSOR_F[7] = { 987, 994, 993, 993, 994, 991, 996 };
+// int MIN_SENSOR_F[7] = { 327, 495, 518, 296, 392, 297, 444 };//บ่าย
+
+
+int MAX_SENSOR_F[7] = { 987, 993, 992, 991, 992, 990, 995 };
+int MIN_SENSOR_F[7] = { 342, 536, 515, 293, 359, 408, 420 };  //บ่าย
 
 int back_pin[3] = { 69, 68, 67 };
 int MAX_SENSOR_B[3] = { 991, 994, 995 };
@@ -46,7 +54,7 @@ void setup() {
   // pinMode(3, OUTPUT);
   // digitalWrite(3, HIGH);
   // Read_eye();
-  // displayB();
+  // display();
   //  monitorSensorB();
   // displayValueF(1500);
   //  gujaarn();
@@ -55,13 +63,13 @@ void setup() {
 void loop() {
   // fullcode();
   // if (digitalRead(7) == 1) {
-    //   delay(300);
-    //   // pink();
-    //   // green();
-    //   // yellow();
-    // smsv2(0, 10);
-    // keep_r();
-    // b2_cross(80);
+  //   delay(300);
+  //   // pink();
+  //   // green();
+  //   // yellow();
+  // smsv2(0, 10);
+  // keep_r();
+  // b2_cross(80);
   // }
   fullcode_retry();
 }
